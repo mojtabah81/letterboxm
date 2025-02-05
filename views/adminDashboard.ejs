@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/header.ejs') %>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="/">Admin Panel</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/admin/dashboard">Dashboard</a></li>
+      <li><a href="/logout">Logout</a></li>
+    </ul>
+  </header>
+
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="/admin/users">Manage Users</a></li>
+        <li><a href="/admin/reports">View Reports</a></li>
+        <li><a href="/admin/settings">Settings</a></li>
+      </ul>
+    </aside>
+
+    <main class="dashboard-content">
+      <h1>Welcome, Admin</h1>
+      <p>Here you can manage the application and users.</p>
+
+      <section class="cards">
+        <div class="card">
+          <h2>Total Users</h2>
+          <p>100</p>
+        </div>
+        <div class="card">
+          <h2>Active Sessions</h2>
+          <p>25</p>
+        </div>
+        <div class="card">
+          <h2>Reports</h2>
+          <p>5 Pending</p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Admin Panel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
